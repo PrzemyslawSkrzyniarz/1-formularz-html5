@@ -4,13 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Formularz kontaktowy</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <form action="https://formspree.io/przemyslaw.hilary.skrzyniarz@gmail.com" method="POST">
-        <input type="text" name="name">
-        <input type="email" name="_replyto">
-        <input type="submit" value="Send">
+
+        <label for="name">First Name:</label>
+        <input type="text" name="name" required placeholder="Imię" id="name">
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" required placeholder="Nazwisko" id="lastname">
+
+        <label for="email">E-mail</label>
+        <input type="email" name="_replyto" id="email">
+
+        <label for="phone">Phone number</label>
+        <input type="tel" name="phone" id="phone">
+
+        <label for="city">Choose a city</label>
+        <select name="city" id="city">
+            <option value="krakow">Kraków</option>
+            <option value="warszawa">Warszawa</option>
+            <option value="gdansk">Gdańsk</option>
+        </select>
+
+        <p>Choose gender: / Wybierz płeć: </p>
+        <input type="radio" name="gender" value="male" id="male"><label for="male">Man / Mężczyzna</label>
+        <br>
+        <input type="radio" name="gender" value="female" id="female"><label for="female">Woman / Kobieta </label>
+
+        <label for="message"></label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+        <script src="js/index.js"></script>
+
+        <input type="checkbox" name="agreement" onclick="control_checkbox()" id="agreement">
+        <label for="agreement"><a target="_blank" rel="noopener noreferrer" href="./RODO.html">Consent to provide personal data <br> Zgoda na podanie danych osobowych</a></label>
+
+        <input type="reset" value="Clear / Wyczyść">
+
+        <input type="submit" onclick="control_checkbox()" value="Send / Wyślij">
+
+
+
+
     </form>
 </body>
 
