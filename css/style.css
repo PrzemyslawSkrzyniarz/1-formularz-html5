@@ -1,0 +1,82 @@
+body {
+    background-color: #41759e;
+}
+
+form {
+    width: auto;
+    height: auto;
+    color: #fff;
+    background-color: #213b50;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    margin-bottom: 50px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -10%);
+}
+
+
+
+form input {
+    /*    margin: auto;*/
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form select,
+form input[type='text'],
+form input[type='email'],
+form input[type='tel'],
+form textarea {
+    width: 300px;
+    height: 30px;
+    background-color: #2b4a64;
+    color: #fff;
+    border: 1px solid #213b50;
+}
+
+form select:focus,
+form input:focus,
+form textarea:focus {
+    background-color: #4e708c;
+    border: 1px solid #fff;
+    outline: none;
+}
+
+form select:focus,
+form select:hover,
+form input#male,
+form input#female{
+    cursor: pointer;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form label[for*='male'],
+form label[for='agreement'] {
+    display: inline-block;
+    cursor: pointer;
+}
+
+form input[type='submit'],
+form input[type='reset'] {
+    display: inline-block;
+    background-color: #5cc058;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+form input[type='submit'] {
+    margin-left: 20px;
+}

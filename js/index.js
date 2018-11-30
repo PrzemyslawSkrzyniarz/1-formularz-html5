@@ -2,6 +2,6 @@ function control_checkbox() {
     if (document.getElementById('agreement').checked) {
         document.getElementById('agreement').style.visibility = 'visible';
     } else {
-        alert('By clicking OK, you agree to providing personal information. \n Klikając OK wyrażasz zgodę na podanie danych osobowych.');
+        alert('I agree to send the personal data provided in the form. \nWyrażam zgodę na wysłanie podanych w formularzu danych osobowych.');
     }
 }
