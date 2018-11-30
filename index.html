@@ -30,13 +30,19 @@
         </select>
 
         <p>Choose gender: / Wybierz płeć: </p>
-        <input type="radio" name="gender" value="male" id="male"><label for="male">Man / Mężczyzna</label>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Man / Mężczyzna</label>
+        
         <br>
-        <input type="radio" name="gender" value="female" id="female"><label for="female">Woman / Kobieta </label>
+        
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">Woman / Kobieta </label>
 
-        <label for="message"></label>
+        <label for="message">Message / Wiadomość:</label>
         <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
+        
+        <br>
+        
         <script src="js/index.js"></script>
 
         <input type="checkbox" name="agreement" onclick="control_checkbox()" id="agreement">
@@ -45,9 +51,6 @@
         <input type="reset" value="Clear / Wyczyść">
 
         <input type="submit" onclick="control_checkbox()" value="Send / Wyślij">
-
-
-
 
     </form>
 </body>
